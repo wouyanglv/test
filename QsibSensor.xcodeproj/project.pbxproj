@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		060C372F256C49F200DEF35F /* DeviceInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060C372E256C49F200DEF35F /* DeviceInfoVC.swift */; };
+		06153A9025682C4000889A21 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 06153A8F25682C4000889A21 /* Toast */; };
+		06153A9425682C6D00889A21 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 06153A9325682C6D00889A21 /* ReSwift */; };
+		06153A9825682C9100889A21 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 06153A9725682C9100889A21 /* Charts */; };
+		06153A9F25682D3300889A21 /* AsyncHTTPClient in Frameworks */ = {isa = PBXBuildFile; productRef = 06153A9E25682D3300889A21 /* AsyncHTTPClient */; };
+		0630F8F9256D9EDE00559577 /* InspectDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0630F8F8256D9EDE00559577 /* InspectDataVC.swift */; };
+		068E706B2565AC2F00673E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E706A2565AC2F00673E32 /* AppDelegate.swift */; };
+		068E706D2565AC2F00673E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E706C2565AC2F00673E32 /* SceneDelegate.swift */; };
+		068E706F2565AC2F00673E32 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E706E2565AC2F00673E32 /* MainViewController.swift */; };
+		068E70722565AC2F00673E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068E70702565AC2F00673E32 /* Main.storyboard */; };
+		068E70742565AC3200673E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 068E70732565AC3200673E32 /* Assets.xcassets */; };
+		068E70772565AC3200673E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 068E70752565AC3200673E32 /* LaunchScreen.storyboard */; };
+		068E70882565AE4200673E32 /* QsibSensorLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E70872565AE4200673E32 /* QsibSensorLib.swift */; };
+		068E708C2565BD2E00673E32 /* DevicesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068E708B2565BD2E00673E32 /* DevicesTableVC.swift */; };
+		06A86AAB256830BC00B30115 /* AppBluetoothDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A86AAA256830BC00B30115 /* AppBluetoothDelegate.swift */; };
+		06A86AAF2568312100B30115 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86AAE2568312100B30115 /* NIOTLS */; };
+		06A86AB12568312100B30115 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86AB02568312100B30115 /* NIOWebSocket */; };
+		06A86AB32568312100B30115 /* _NIO1APIShims in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86AB22568312100B30115 /* _NIO1APIShims */; };
+		06A86AB52568312100B30115 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86AB42568312100B30115 /* NIOFoundationCompat */; };
+		06A86AB72568312100B30115 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86AB62568312100B30115 /* NIOHTTP1 */; };
+		06A86AB92568312100B30115 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86AB82568312100B30115 /* NIOConcurrencyHelpers */; };
+		06A86ABB2568312100B30115 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86ABA2568312100B30115 /* NIOTestUtils */; };
+		06A86ABD2568312100B30115 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 06A86ABC2568312100B30115 /* NIO */; };
+		06A8B533256833BD00880CE8 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A8B532256833BD00880CE8 /* AppStore.swift */; };
+		06BA97BD2576B56C007FFB75 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 06BA97BC2576B56C007FFB75 /* ZIPFoundation */; };
+		06DC88EE256C1B70006A2B97 /* QSPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DC88ED256C1B70006A2B97 /* QSPeripheral.swift */; };
+		9505E94E2589BF4200672619 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 068E70822565AC6800673E32 /* libresolv.tbd */; };
+		952E2D00258A7D7200A79DE9 /* libqsib_sensor_rs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 952E2CFE258A7D4100A79DE9 /* libqsib_sensor_rs.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		060C372E256C49F200DEF35F /* DeviceInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoVC.swift; sourceTree = "<group>"; };
+		0630F8F8256D9EDE00559577 /* InspectDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectDataVC.swift; sourceTree = "<group>"; };
+		068E70672565AC2F00673E32 /* QsibSensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QsibSensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		068E706A2565AC2F00673E32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		068E706C2565AC2F00673E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		068E706E2565AC2F00673E32 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		068E70712565AC2F00673E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		068E70732565AC3200673E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		068E70762565AC3200673E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		068E70782565AC3200673E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068E70822565AC6800673E32 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		068E70842565ACAC00673E32 /* QsibSensor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QsibSensor-Bridging-Header.h"; sourceTree = "<group>"; };
+		068E70852565AE1200673E32 /* libqsib_sensor_rs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqsib_sensor_rs.a; path = "../../qsib-sensor-lib-rs/target/universal/release/libqsib_sensor_rs.a"; sourceTree = "<group>"; };
+		068E70872565AE4200673E32 /* QsibSensorLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QsibSensorLib.swift; sourceTree = "<group>"; };
+		068E708B2565BD2E00673E32 /* DevicesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesTableVC.swift; sourceTree = "<group>"; };
+		06A86AAA256830BC00B30115 /* AppBluetoothDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBluetoothDelegate.swift; sourceTree = "<group>"; };
+		06A8B5302568339D00880CE8 /* QsibSensor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QsibSensor.entitlements; sourceTree = "<group>"; };
+		06A8B532256833BD00880CE8 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		06DC88ED256C1B70006A2B97 /* QSPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QSPeripheral.swift; sourceTree = "<group>"; };
+		9505E9502589BF5700672619 /* lib.rs */ = {isa = PBXFileReference; lastKnownFileType = text; name = lib.rs; path = QsibSensor/lib.rs; sourceTree = "<group>"; };
+		952E2CFE258A7D4100A79DE9 /* libqsib_sensor_rs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqsib_sensor_rs.a; path = "qsib-sensor-lib-rs/target/universal/release/libqsib_sensor_rs.a"; sourceTree = "<group>"; };
+		952E2D05258A7F9000A79DE9 /* qsib_sensor_lib_rs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = qsib_sensor_lib_rs.h; path = "qsib-sensor-lib-rs/src/qsib_sensor_lib_rs.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		068E70642565AC2F00673E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A86ABD2568312100B30115 /* NIO in Frameworks */,
+				06A86AB12568312100B30115 /* NIOWebSocket in Frameworks */,
+				9505E94E2589BF4200672619 /* libresolv.tbd in Frameworks */,
+				06A86AB52568312100B30115 /* NIOFoundationCompat in Frameworks */,
+				06A86AB32568312100B30115 /* _NIO1APIShims in Frameworks */,
+				06A86AB72568312100B30115 /* NIOHTTP1 in Frameworks */,
+				06A86AB92568312100B30115 /* NIOConcurrencyHelpers in Frameworks */,
+				06153A9425682C6D00889A21 /* ReSwift in Frameworks */,
+				06153A9F25682D3300889A21 /* AsyncHTTPClient in Frameworks */,
+				06153A9025682C4000889A21 /* Toast in Frameworks */,
+				06153A9825682C9100889A21 /* Charts in Frameworks */,
+				06A86AAF2568312100B30115 /* NIOTLS in Frameworks */,
+				06A86ABB2568312100B30115 /* NIOTestUtils in Frameworks */,
+				952E2D00258A7D7200A79DE9 /* libqsib_sensor_rs.a in Frameworks */,
+				06BA97BD2576B56C007FFB75 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068E705E2565AC2F00673E32 = {
+			isa = PBXGroup;
+			children = (
+				068E70692565AC2F00673E32 /* QsibSensor */,
+				068E70682565AC2F00673E32 /* Products */,
+				068E70812565AC6800673E32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		068E70682565AC2F00673E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				068E70672565AC2F00673E32 /* QsibSensor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		068E70692565AC2F00673E32 /* QsibSensor */ = {
+			isa = PBXGroup;
+			children = (
+				952E2D05258A7F9000A79DE9 /* qsib_sensor_lib_rs.h */,
+				06A8B5302568339D00880CE8 /* QsibSensor.entitlements */,
+				068E706A2565AC2F00673E32 /* AppDelegate.swift */,
+				068E706C2565AC2F00673E32 /* SceneDelegate.swift */,
+				068E706E2565AC2F00673E32 /* MainViewController.swift */,
+				068E70702565AC2F00673E32 /* Main.storyboard */,
+				068E70732565AC3200673E32 /* Assets.xcassets */,
+				068E70752565AC3200673E32 /* LaunchScreen.storyboard */,
+				068E70782565AC3200673E32 /* Info.plist */,
+				068E70842565ACAC00673E32 /* QsibSensor-Bridging-Header.h */,
+				068E70872565AE4200673E32 /* QsibSensorLib.swift */,
+				068E708B2565BD2E00673E32 /* DevicesTableVC.swift */,
+				06A86AAA256830BC00B30115 /* AppBluetoothDelegate.swift */,
+				06A8B532256833BD00880CE8 /* AppStore.swift */,
+				06DC88ED256C1B70006A2B97 /* QSPeripheral.swift */,
+				060C372E256C49F200DEF35F /* DeviceInfoVC.swift */,
+				0630F8F8256D9EDE00559577 /* InspectDataVC.swift */,
+			);
+			path = QsibSensor;
+			sourceTree = "<group>";
+		};
+		068E70812565AC6800673E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				952E2CFE258A7D4100A79DE9 /* libqsib_sensor_rs.a */,
+				9505E9502589BF5700672619 /* lib.rs */,
+				068E70852565AE1200673E32 /* libqsib_sensor_rs.a */,
+				068E70822565AC6800673E32 /* libresolv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		068E70662565AC2F00673E32 /* QsibSensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 068E707B2565AC3200673E32 /* Build configuration list for PBXNativeTarget "QsibSensor" */;
+			buildPhases = (
+				068E70632565AC2F00673E32 /* Sources */,
+				068E70642565AC2F00673E32 /* Frameworks */,
+				068E70652565AC2F00673E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QsibSensor;
+			packageProductDependencies = (
+				06153A8F25682C4000889A21 /* Toast */,
+				06153A9325682C6D00889A21 /* ReSwift */,
+				06153A9725682C9100889A21 /* Charts */,
+				06153A9E25682D3300889A21 /* AsyncHTTPClient */,
+				06A86AAE2568312100B30115 /* NIOTLS */,
+				06A86AB02568312100B30115 /* NIOWebSocket */,
+				06A86AB22568312100B30115 /* _NIO1APIShims */,
+				06A86AB42568312100B30115 /* NIOFoundationCompat */,
+				06A86AB62568312100B30115 /* NIOHTTP1 */,
+				06A86AB82568312100B30115 /* NIOConcurrencyHelpers */,
+				06A86ABA2568312100B30115 /* NIOTestUtils */,
+				06A86ABC2568312100B30115 /* NIO */,
+				06BA97BC2576B56C007FFB75 /* ZIPFoundation */,
+			);
+			productName = QsibSensor;
+			productReference = 068E70672565AC2F00673E32 /* QsibSensor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		068E705F2565AC2F00673E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					068E70662565AC2F00673E32 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 068E70622565AC2F00673E32 /* Build configuration list for PBXProject "QsibSensor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 068E705E2565AC2F00673E32;
+			packageReferences = (
+				06153A8E25682C4000889A21 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				06153A9225682C6D00889A21 /* XCRemoteSwiftPackageReference "ReSwift" */,
+				06153A9625682C9100889A21 /* XCRemoteSwiftPackageReference "Charts" */,
+				06153A9D25682D3300889A21 /* XCRemoteSwiftPackageReference "async-http-client" */,
+				06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				06BA97BB2576B56B007FFB75 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = 068E70682565AC2F00673E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				068E70662565AC2F00673E32 /* QsibSensor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		068E70652565AC2F00673E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068E70772565AC3200673E32 /* LaunchScreen.storyboard in Resources */,
+				068E70742565AC3200673E32 /* Assets.xcassets in Resources */,
+				068E70722565AC2F00673E32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068E70632565AC2F00673E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068E706F2565AC2F00673E32 /* MainViewController.swift in Sources */,
+				068E708C2565BD2E00673E32 /* DevicesTableVC.swift in Sources */,
+				068E706B2565AC2F00673E32 /* AppDelegate.swift in Sources */,
+				068E70882565AE4200673E32 /* QsibSensorLib.swift in Sources */,
+				068E706D2565AC2F00673E32 /* SceneDelegate.swift in Sources */,
+				06DC88EE256C1B70006A2B97 /* QSPeripheral.swift in Sources */,
+				06A8B533256833BD00880CE8 /* AppStore.swift in Sources */,
+				0630F8F9256D9EDE00559577 /* InspectDataVC.swift in Sources */,
+				060C372F256C49F200DEF35F /* DeviceInfoVC.swift in Sources */,
+				06A86AAB256830BC00B30115 /* AppBluetoothDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		068E70702565AC2F00673E32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068E70712565AC2F00673E32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		068E70752565AC3200673E32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				068E70762565AC3200673E32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		068E70792565AC3200673E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "/Users/chenyuwang/Desktop/qsib-sensor-ios/qsib-sensor-lib-rs/target/universal/release";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		068E707A2565AC3200673E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "/Users/chenyuwang/Desktop/qsib-sensor-ios/qsib-sensor-lib-rs/target/universal/release";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		068E707C2565AC3200673E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QsibSensor/QsibSensor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7WXAFCNV5;
+				INFOPLIST_FILE = QsibSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/qsib-sensor-lib-rs/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = "QSIB-MA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenyuwang/Desktop/Implantable_MA_iOS/QsibSensor/QsibSensor-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		068E707D2565AC3200673E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = QsibSensor/QsibSensor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7WXAFCNV5;
+				INFOPLIST_FILE = QsibSensor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/qsib-sensor-lib-rs/target/universal/release";
+				PRODUCT_BUNDLE_IDENTIFIER = "QSIB-MA";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/chenyuwang/Desktop/Implantable_MA_iOS/QsibSensor/QsibSensor-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		068E70622565AC2F00673E32 /* Build configuration list for PBXProject "QsibSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068E70792565AC3200673E32 /* Debug */,
+				068E707A2565AC3200673E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		068E707B2565AC3200673E32 /* Build configuration list for PBXNativeTarget "QsibSensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				068E707C2565AC3200673E32 /* Debug */,
+				068E707D2565AC3200673E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06153A8E25682C4000889A21 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qsib-cbie/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		06153A9225682C6D00889A21 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		06153A9625682C9100889A21 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.0;
+			};
+		};
+		06153A9D25682D3300889A21 /* XCRemoteSwiftPackageReference "async-http-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server/async-http-client";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.2;
+			};
+		};
+		06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.24.0;
+			};
+		};
+		06BA97BB2576B56B007FFB75 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06153A8F25682C4000889A21 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06153A8E25682C4000889A21 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		06153A9325682C6D00889A21 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06153A9225682C6D00889A21 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+		06153A9725682C9100889A21 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06153A9625682C9100889A21 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		06153A9E25682D3300889A21 /* AsyncHTTPClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06153A9D25682D3300889A21 /* XCRemoteSwiftPackageReference "async-http-client" */;
+			productName = AsyncHTTPClient;
+		};
+		06A86AAE2568312100B30115 /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		06A86AB02568312100B30115 /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		06A86AB22568312100B30115 /* _NIO1APIShims */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = _NIO1APIShims;
+		};
+		06A86AB42568312100B30115 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+		06A86AB62568312100B30115 /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		06A86AB82568312100B30115 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		06A86ABA2568312100B30115 /* NIOTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTestUtils;
+		};
+		06A86ABC2568312100B30115 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06A86AAD2568312100B30115 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		06BA97BC2576B56C007FFB75 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06BA97BB2576B56B007FFB75 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 068E705F2565AC2F00673E32 /* Project object */;
+}

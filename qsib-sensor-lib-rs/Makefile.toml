@@ -1,0 +1,40 @@
+[env]
+CARGO_MAKE_EXTEND_WORKSPACE_MAKEFILE = true
+
+[tasks.nrf52832]
+toolchain = "nightly"
+command = "cargo"
+args = ["build", "--release", "--target", "thumbv7em-none-eabi"]
+
+[tasks.nrf52840]
+toolchain = "nightly"
+command = "cargo"
+args = ["build", "--release", "--target", "thumbv7em-none-eabihf"]
+
+[tasks.install-lipo]
+toolchain = "nightly"
+install_crate = { crate_name="cargo-lipo", binary="cargo", test_arg=["lipo", "--version"], min_version="*" }
+
+[tasks.ios]
+toolchain = "nightly"
+command = "cargo"
+args = ["lipo", "--release"]
+dependencies = ["install-lipo"]
+
+[tasks.test]
+toolchain = "nightly"
+command = "cargo"
+args = ["test", "--target", "aarch64-apple-darwin", "--", "--nocapture"]
+
+[tasks.fmt]
+toolchain = "nightly"
+command = "cargo"
+args = ["fmt"]
+
+[tasks.dev-test-flow]
+dependencies = [
+    "fmt",
+    "test",
+    "nrf52832",
+    "ios",
+]
